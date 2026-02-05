@@ -38,7 +38,7 @@ const Services = () => {
   const technologies = [
     { name: 'Kotlin', icon: '⊕' },
     { name: 'Swift', icon: '◇' },
-    { name: 'React', icon: '→' },
+    { name: 'React Native', icon: '→' },
     { name: 'OpenAI', icon: '◎' },
     { name: 'Firebase', icon: '🔥' },
     { name: 'Gemini', icon: '✦' },
