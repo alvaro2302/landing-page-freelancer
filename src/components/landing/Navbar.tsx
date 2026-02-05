@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Menu, X, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-
+import iconBussines from "@/assets/IconNetwork.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
@@ -19,10 +19,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <Zap className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-lg font-bold text-foreground">DevPortfolio</span>
+            <div className="w-30 h-10 rounded-lg bg-primary flex items-center justify-center">
+                  <img 
+                  src={iconBussines} 
+                  alt="AI-Powered Mobile App"
+                  className="w-30 h-10 drop-shadow-2xl opacity-50 rounded-md"/>
+            </div>      
+            <span className="text-lg font-bold text-foreground">Brothers Apps Studios</span>
           </a>
 
           {/* Desktop Navigation */}
