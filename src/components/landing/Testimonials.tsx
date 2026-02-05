@@ -8,21 +8,21 @@ const Testimonials = () => {
   const testimonials = [
     {
       text: t('testimonials.t1'),
-      author: 'John D.',
+      author: 'geosites',
       location: 'United States',
-      avatar: 'JD',
+      avatar: 'G',
     },
     {
       text: t('testimonials.t2'),
-      author: 'Sarah L.',
+      author: 'rendiaz06.',
       location: 'Germany',
-      avatar: 'SL',
+      avatar: 'RD',
     },
     {
       text: t('testimonials.t3'),
-      author: 'Michael R.',
-      location: 'United Kingdom',
-      avatar: 'MR',
+      author: 'hermescortes',
+      location: 'Mexico',
+      avatar: 'H',
     },
   ];
 

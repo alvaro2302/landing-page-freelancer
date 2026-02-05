@@ -67,9 +67,9 @@ const translations = {
     
     // Testimonials
     'testimonials.title': 'Confiado por Clientes Globales de Fiverr',
-    'testimonials.t1': '"¡Desarrollador increíble! Entregó mi app de IA 3 días antes de lo previsto. La integración con Gemini es impecable y el rendimiento es rapidísimo."',
-    'testimonials.t2': '"El mejor desarrollador móvil con el que he trabajado en Fiverr. Realmente entiende UI/UX nativo y sabe cómo optimizar para ambas plataformas."',
-    'testimonials.t3': '"Superó las expectativas con la integración de OpenAI. La implementación personalizada de RAG es exactamente lo que necesitábamos para nuestra app empresarial."',
+    'testimonials.t1': '"He trabajado con Álvaro y su equipo durante 4 años desarrollando varias versiones de una aplicación móvil. Esta vez, cambiamos el backend de la plataforma y él solucionó todos los problemas de transición. Siempre se muestra dispuesto a colaborar."',
+    'testimonials.t2': '"Fue increíble trabajar con Álvaro. Muy profesional, capaz de trabajar de forma independiente y siempre dispuesto a encontrar soluciones a los desafíos que surgieron durante el proceso de desarrollo. Lo recomiendo ampliamente."',
+    'testimonials.t3': '"Excelente en términos de tiempo y código."',
     
     // Process
     'process.badge': 'PROCESO',
@@ -181,9 +181,9 @@ const translations = {
     
     // Testimonials
     'testimonials.title': 'Trusted by Fiverr Global Clients',
-    'testimonials.t1': '"Incredible developer! Delivered my AI app 3 days ahead of schedule. The integration with Gemini is flawless and the performance is lightning fast."',
-    'testimonials.t2': '"The best mobile developer I\'ve worked with on Fiverr. He truly understands native UI/UX and knows how to optimize for both platforms."',
-    'testimonials.t3': '"Exceeded expectations with the OpenAI integration. The custom RAG implementation is exactly what we needed for our enterprise app."',
+    'testimonials.t1': '"I have worked with Alvaro and his team for 4 years developing several versions of a mobile app. This time we changed the back end of the platform and he solved all of the transition issues. He is always cooperative."',
+    'testimonials.t2': '"It was amazing working with Alvaro. Very profesional, able to work independently and always willing to find solutions to the challenges found on the way during the development process. Highly recommended."',
+    'testimonials.t3': '"Excellent in terms of time and code."',
     
     // Process
     'process.badge': 'PROCESS',
