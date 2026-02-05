@@ -100,7 +100,7 @@ const Portfolio = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6 pb-0">
+              <div className="p-12 pb-0">
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>

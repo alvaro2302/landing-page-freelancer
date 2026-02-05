@@ -128,7 +128,7 @@ const Hero = () => {
                 <img 
                   src={heroPhone} 
                   alt="AI-Powered Mobile App"
-                  className="w-full h-auto drop-shadow-2xl"
+                  className="w-full h-auto drop-shadow-2xl opacity-50 rounded-md"
                 />
               </motion.div>
 
@@ -144,7 +144,7 @@ const Hero = () => {
               >
                 <div className="flex items-center gap-2">
                   <span className="text-primary text-lg">⊕</span>
-                  <span className="text-sm font-medium">Kotlin</span>
+                  <span className="text-sm font-medium">Gemini</span>
                 </div>
               </motion.div>
               
