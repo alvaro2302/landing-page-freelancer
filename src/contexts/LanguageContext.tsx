@@ -49,8 +49,8 @@ const translations = {
     'services.react.feature2': 'Prototipado Rápido',
     'services.ai.title': 'Integración de IA',
     'services.ai.desc': 'Integra características de IA de vanguardia en tus apps existentes usando OpenAI, Gemini o flujos de trabajo LLM personalizados.',
-    'services.ai.feature1': 'Pipelines LLM RAG',
-    'services.ai.feature2': 'Búsqueda Vectorial',
+    'services.ai.feature1': 'Integraciones API',
+    'services.ai.feature2': 'Detección con IA, generación de imágenes, análisis de audio, etc.,etc',
     
     // Portfolio
     'portfolio.badge': 'PORTAFOLIO',
@@ -163,8 +163,8 @@ const translations = {
     'services.react.feature2': 'Fast Prototyping',
     'services.ai.title': 'AI Integration',
     'services.ai.desc': 'Integrate cutting-edge AI features into your existing apps using OpenAI, Gemini, or custom-built LLM workflows.',
-    'services.ai.feature1': 'LLM RAG Pipelines',
-    'services.ai.feature2': 'Custom Vector Search',
+    'services.ai.feature1': 'API Integrations',
+    'services.ai.feature2': 'AI with Detection, image Generation, Audio Analysis,etc',
     
     // Portfolio
     'portfolio.badge': 'PORTFOLIO',
