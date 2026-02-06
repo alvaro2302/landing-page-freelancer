@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
-
+import AppPhoto from '@/assets/AppRevivePhoto.png';
+import AppResume from '@/assets/appResume.png';
 type Language = 'es' | 'en';
 
 interface LanguageContextType {
@@ -56,14 +57,16 @@ const translations = {
     'portfolio.badge': 'PORTAFOLIO',
     'portfolio.title': 'Trabajos Seleccionados',
     'portfolio.viewAll': 'Ver Todos los Proyectos',
-    'portfolio.project1.title': 'Nexus AI Assistant',
-    'portfolio.project1.desc': 'Una herramienta integral de gestión de tareas integrada con OpenAI para programación automatizada y redacción de correos.',
-    'portfolio.project2.title': 'Vortex Wallet',
-    'portfolio.project2.desc': 'Billetera cripto de próxima generación con seguridad biométrica, seguimiento en tiempo real y alertas de trading automatizadas.',
-    'portfolio.project3.title': 'HealthSync Pro',
-    'portfolio.project3.desc': 'App de monitoreo de salud con IA que analiza patrones de sueño, actividad física y nutrición.',
-    'portfolio.project4.title': 'VoiceNote AI',
-    'portfolio.project4.desc': 'Transcripción de voz en tiempo real con resúmenes inteligentes usando Whisper y GPT-4.',
+    'portfolio.project1.title': 'PhotoRevive',
+    'portfolio.project1.desc': 'Es una aplicación nativa de iOS que aprovecha la inteligencia artificial para restaurar fotografías antiguas, dañadas o descoloridas.',
+    'portfolio.project1.photoApp': AppPhoto,
+    'portfolio.project2.title': 'Resume AI',
+    'portfolio.project2.desc': 'Una app inteligente que convierte tus audios en resúmenes claros y organizados, resaltando los puntos clave para que puedas repasar y estudiar en minutos.',
+    'portfolio.project2.photoApp': AppResume,
+    'portfolio.project3.title': 'TransportApp',
+    'portfolio.project3.desc': 'Es una aplicación móvil que ofrece al usuario una agenda con la hora de salida  y ver en un mapa los lugares donde espera el transporte',
+    'portfolio.project4.title': 'Geosites App',
+    'portfolio.project4.desc': 'Una app de viajes que te permite descubrir y organizar sitios turísticos en Turquía y Francia. Busca tus destinos favoritos, guarda lugares imperdibles y navega directamente con Mapbox o Google Maps.',
     
     // Testimonials
     'testimonials.title': 'Confiado por Clientes Globales de Fiverr',
@@ -170,14 +173,16 @@ const translations = {
     'portfolio.badge': 'PORTFOLIO',
     'portfolio.title': 'Selected Works',
     'portfolio.viewAll': 'View All Projects',
-    'portfolio.project1.title': 'Nexus AI Assistant',
-    'portfolio.project1.desc': 'A comprehensive task management tool integrated with OpenAI for automated scheduling and email drafting.',
-    'portfolio.project2.title': 'Vortex Wallet',
-    'portfolio.project2.desc': 'Next-gen crypto wallet with biometric security, real-time tracking, and automated trading alerts.',
-    'portfolio.project3.title': 'HealthSync Pro',
-    'portfolio.project3.desc': 'AI-powered health monitoring app that analyzes sleep patterns, physical activity, and nutrition.',
-    'portfolio.project4.title': 'VoiceNote AI',
-    'portfolio.project4.desc': 'Real-time voice transcription with intelligent summaries using Whisper and GPT-4.',
+    'portfolio.project1.title': 'PhotoRevive',
+    'portfolio.project1.desc': 'It is a native iOS application created with SwiftUI that leverages artificial intelligence to restore old, damaged, or faded photographs.',
+    'portfolio.project1.photoApp': AppPhoto,
+    'portfolio.project2.title': 'Resume AI',
+    'portfolio.project2.desc': 'A smart app that turns your audio into clear and organized summaries, highlighting the key points so you can review and study in minutes.',
+    'portfolio.project2.photoApp': AppResume,
+    'portfolio.project3.title': 'TransportApp',
+    'portfolio.project3.desc': 'It is a mobile application that offers the user a schedule with the departure time and shows on a map the places where the transport waits.',
+    'portfolio.project4.title': 'Geosites App',
+    'portfolio.project4.desc': 'A travel app that lets you discover and organize tourist sites in Türkiye and France. Search for your favorite destinations, save must-see places, and navigate directly with Mapbox or Google Maps.',
     
     // Testimonials
     'testimonials.title': 'Trusted by Fiverr Global Clients',
