@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, ExternalLink } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-
+import appRevive from '@/assets/AppRevivePhoto.png'
 const Portfolio = () => {
   const { t } = useLanguage();
 
@@ -9,13 +9,15 @@ const Portfolio = () => {
     {
       title: t('portfolio.project1.title'),
       description: t('portfolio.project1.desc'),
-      tags: ['AI & Productivity', 'React Native'],
+      photoApp: t('portfolio.project1.photoApp'),
+      tags: ['AI & Productivity', 'Swift', "SwiftUI"],
       gradient: 'from-emerald-500/20 to-teal-500/20',
     },
     {
       title: t('portfolio.project2.title'),
       description: t('portfolio.project2.desc'),
-      tags: ['FinTech', 'Native iOS'],
+      photoApp: t('portfolio.project2.photoApp'),
+      tags: ['AI', 'React Native'],
       gradient: 'from-blue-500/20 to-indigo-500/20',
     },
     {
@@ -100,7 +102,7 @@ const Portfolio = () => {
               </div>
 
               {/* Content */}
-              <div className="p-12 pb-0">
+              <div className="p-12 pb-40">
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
@@ -110,19 +112,23 @@ const Portfolio = () => {
               </div>
 
               {/* Mockup Area */}
-              <div className={`mt-6 h-64 lg:h-80 bg-gradient-to-br ${project.gradient} flex items-end justify-center`}>
+              <div className={`mt-12 h-64 lg:h-80 bg-gradient-to-br ${project.gradient} flex items-end justify-center`}>
                 <motion.div 
                   className="w-48 lg:w-56 transform translate-y-4"
                   whileHover={{ y: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="bg-card rounded-t-3xl p-2 shadow-2xl">
+                  <div className="bg-card rounded-t-3xl p-2 shadow-2xl ">
                     <div className="aspect-[9/16] bg-gradient-to-br from-card to-muted rounded-t-2xl flex items-center justify-center">
                       <div className="text-center">
-                        <div className="w-12 h-12 rounded-xl bg-primary/20 mx-auto mb-3 flex items-center justify-center">
-                          <ArrowUpRight className="w-6 h-6 text-primary" />
+                        <div className="w-full h-full rounded-xl bg-primary/20 mx-auto mb-3 flex items-center justify-center">
+                          <img 
+                            src={project.photoApp} 
+                            alt="AI-Powered Mobile App"
+                            className="w-full h-full"
+                          />
                         </div>
-                        <p className="text-xs text-muted-foreground">{project.title}</p>
+                      
                       </div>
                     </div>
                   </div>
