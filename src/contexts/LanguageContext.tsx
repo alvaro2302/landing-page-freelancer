@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 import AppPhoto from '@/assets/AppRevivePhoto.png';
-import AppResume from '@/assets/appResume.png';
+import AppResume from '@/assets/AppResume.png';
 type Language = 'es' | 'en';
 
 interface LanguageContextType {
