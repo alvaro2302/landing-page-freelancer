@@ -51,8 +51,10 @@ const Navbar = () => {
               {language === 'es' ? 'EN' : 'ES'}
             </button>
             
-            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
-              {t('nav.contact')}
+            <Button asChild size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
+              <a href="#contact">
+                {t('nav.contact')}
+              </a>
             </Button>
           </div>
 

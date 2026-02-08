@@ -145,7 +145,10 @@ const Pricing = () => {
                     : 'bg-secondary hover:bg-secondary/80 text-secondary-foreground'
                 }`}
               >
-                {t('pricing.cta')}
+                <a href="#contact">
+                  {t('pricing.cta')}
+                </a>
+           
               </Button>
             </motion.div>
           ))}
