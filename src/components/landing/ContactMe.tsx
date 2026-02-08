@@ -37,7 +37,7 @@ const ContactMe = () => {
       message: '',
     },
   });
-  const handleSubmit = async (formData) => {
+  const handleSubmit = async (formData: FormData) => {
     try {
       const response = await fetch('/.netlify/functions/send-email', {
         method: 'POST',
@@ -53,11 +53,9 @@ const ContactMe = () => {
 
       if (!response.ok) throw new Error(data.error);
 
-      // Éxito
-      console.log('Email enviado:', data.id);
       navigate('/contact-success');
     } catch (error) {
-      console.error('Error:', error.message);
+      console.error('Error:', error instanceof Error ? error.message : 'Unknown error');
     }
   };
   const onSubmit = (data: FormData) => {
