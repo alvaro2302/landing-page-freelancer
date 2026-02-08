@@ -125,6 +125,24 @@ const translations = {
     // Footer
     'footer.tagline': 'Construyamos tu próxima gran idea con ingeniería de clase mundial e inteligencia de vanguardia.',
     'footer.rights': 'Todos los derechos reservados.',
+
+    // Contact
+    'contact.badge': 'CONTACTO',
+    'contact.title': 'Envíame un Mensaje',
+    'contact.subtitle': '¿Tienes un proyecto en mente? Me encantaría saber de ti. Completa el formulario y te responderé lo antes posible.',
+    'contact.name': 'Nombre',
+    'contact.namePlaceholder': 'Tu nombre completo',
+    'contact.email': 'Correo Electrónico',
+    'contact.emailPlaceholder': 'tu@email.com',
+    'contact.message': 'Mensaje',
+    'contact.messagePlaceholder': 'Cuéntame sobre tu proyecto...',
+    'contact.send': 'Enviar Mensaje',
+
+    // Contact Success
+    'contactSuccess.title': '¡Mensaje Enviado!',
+    'contactSuccess.subtitle': 'Gracias por contactarme. Te responderé lo antes posible.',
+    'contactSuccess.summary': 'Resumen de tu mensaje',
+    'contactSuccess.backHome': 'Volver al Inicio',
   },
   en: {
     // Navbar
@@ -241,6 +259,24 @@ const translations = {
     // Footer
     'footer.tagline': "Let's build your next big idea with world-class engineering and cutting-edge intelligence.",
     'footer.rights': 'All rights reserved.',
+
+    // Contact
+    'contact.badge': 'CONTACT',
+    'contact.title': 'Send Me a Message',
+    'contact.subtitle': "Have a project in mind? I'd love to hear from you. Fill out the form and I'll get back to you as soon as possible.",
+    'contact.name': 'Name',
+    'contact.namePlaceholder': 'Your full name',
+    'contact.email': 'Email',
+    'contact.emailPlaceholder': 'you@email.com',
+    'contact.message': 'Message',
+    'contact.messagePlaceholder': 'Tell me about your project...',
+    'contact.send': 'Send Message',
+
+    // Contact Success
+    'contactSuccess.title': 'Message Sent!',
+    'contactSuccess.subtitle': 'Thank you for reaching out. I will get back to you as soon as possible.',
+    'contactSuccess.summary': 'Your message summary',
+    'contactSuccess.backHome': 'Back to Home',
   },
 };
 

@@ -7,6 +7,7 @@ import Testimonials from '@/components/landing/Testimonials';
 import Process from '@/components/landing/Process';
 import Pricing from '@/components/landing/Pricing';
 import Footer from '@/components/landing/Footer';
+import ContactMe from '@/components/landing/ContactMe';
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
           <Testimonials />
           <Process />
           <Pricing />
+          <ContactMe />
         </main>
         <Footer />
       </div>
