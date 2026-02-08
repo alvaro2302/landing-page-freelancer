@@ -37,11 +37,33 @@ const ContactMe = () => {
       message: '',
     },
   });
+  const handleSubmit = async (formData) => {
+    try {
+      const response = await fetch('/.netlify/functions/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
 
+      const data = await response.json();
+
+      if (!response.ok) throw new Error(data.error);
+
+      // Éxito
+      console.log('Email enviado:', data.id);
+      navigate('/contact-success');
+    } catch (error) {
+      console.error('Error:', error.message);
+    }
+  };
   const onSubmit = (data: FormData) => {
     // Store form data in sessionStorage to display on success page
     sessionStorage.setItem('contactFormData', JSON.stringify(data));
-    navigate('/contact-success');
+    handleSubmit(data);
   };
 
   return (
