@@ -1,8 +1,9 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import {buttonVariants } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import heroPhone from '@/assets/hero-phone.png';
+import { cn } from '@/lib/utils';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -17,10 +18,10 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent  pointer-events-none" />
       
       {/* Grid pattern */}
-      <div className="absolute inset-0 opacity-[0.02]" style={{
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{
         backgroundImage: 'linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)',
         backgroundSize: '50px 50px'
       }} />
@@ -81,13 +82,31 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-6 group">
+             <a
+                href="https://github.com/alvaro2302"
+                target="_blank"
+                rel="noreferrer"
+                className={cn(
+                  buttonVariants({ size: "lg" }),
+                  "bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-6 group"
+                )}
+                
+              >
                 {t('hero.cta1')}
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/5 font-medium px-6">
+              </a>
+              <a
+                href="https://www.fiverr.com/studiosolidos/develop-app-ios-and-android-mobile-app-with-react-native"
+                target="_blank"
+                rel="noreferrer"
+                className={cn(
+                  buttonVariants({ size: "lg",variant:"outline" }),
+                  "border-white/10 hover:bg-white/5 font-medium px-6"
+                )}
+                
+              >
                 {t('hero.cta2')}
-              </Button>
+              </a>
             </motion.div>
 
             {/* Stats */}
