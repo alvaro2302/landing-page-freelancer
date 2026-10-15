@@ -3,6 +3,8 @@ import { Zap, Github, Linkedin, Twitter, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import iconBussines from "@/assets/IconNetwork.png";
+import { Link } from "react-router-dom";
+import { LEGAL_ROUTES } from "@/content/legal";
 const Footer = () => {
   const { t } = useLanguage();
 
@@ -60,6 +62,18 @@ const Footer = () => {
 
             {/* Social Links */}
             <div className="flex items-center gap-4">
+              <Link
+                to={LEGAL_ROUTES.terms}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {t('footer.terms')}
+              </Link>
+              <Link
+                to={LEGAL_ROUTES.privacy}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors mr-2"
+              >
+                {t('footer.privacy')}
+              </Link>
               {socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
