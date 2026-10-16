@@ -48,6 +48,8 @@ export const LEGAL_ROUTES: Record<LegalDocId, string> = {
 
 export const LEGAL_EMAIL = 'alejandro1401@brothersappstudios.com';
 const EMAIL = LEGAL_EMAIL;
+export const directionLLC = '30 N Gould St Ste R, SHERIDAN, WY, 8280, United States';
+const DIRECTION = directionLLC;
 
 const P = (t: string, l?: string): LegalBlock => ({ k: 'p', t, l });
 const H = (t: string): LegalBlock => ({ k: 'h', t });
@@ -78,7 +80,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
       subtitle: 'The agreement that governs every mobile app we publish and our website, brothersappstudios.com.',
       date: 'Oct 13, 2026',
       contactTitle: 'Questions about these Terms?',
-      address: 'Brothers App Studios LLC · [mailing address], Wyoming, United States',
+      address: `Brothers App Studios LLC · ${DIRECTION}`,
       sections: [
         S('1', 'Agreement and scope', [
           P(`These Terms of Service ("Terms") are a legal agreement between you and Brothers App Studios LLC, a Wyoming limited liability company ("Brothers App Studios", "we", "us"). They govern your use of every mobile app we publish on the Apple App Store and Google Play, and of our website brothersappstudios.com (together, the "Services").`),
@@ -182,7 +184,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`These Terms are governed by the laws of the State of Wyoming and applicable US federal law, without regard to conflict-of-law rules. Any dispute not subject to arbitration will be heard only in the state or federal courts located in Wyoming, and both parties consent to their jurisdiction, except where Section 9 lets you sue where you live.`, 'Governing law. '),
           P(`We may update these Terms, for example when we launch a new app or feature. We will change the "Last updated" date. If a change is material, we will notify you in the app or by email before it takes effect. Continuing to use the Services after that date means you accept the updated Terms. Changes to Section 9 will not apply to disputes we already knew about.`, 'Changes to these Terms. '),
           P(`These Terms and our Privacy Policy are the entire agreement between you and us about the Services. If any provision is unenforceable, the rest stays in effect. Our failure to enforce a provision is not a waiver. You may not transfer these Terms without our consent; we may transfer them as part of a merger, acquisition or sale of assets. These Terms are written in English. A Spanish translation is provided for convenience; if they differ, the English version controls.`, 'General. '),
-          P(`Brothers App Studios LLC, [mailing address], Wyoming, United States · ${EMAIL} · brothersappstudios.com`, 'Contact. ')
+          P(`Brothers App Studios LLC, ${DIRECTION}· ${EMAIL} · brothersappstudios.com`, 'Contact. ')
         ]),
         S('11', 'Additional terms for apps downloaded from the Apple App Store', [
           P(`If you downloaded one of our apps from the Apple App Store, these terms also apply:`),
@@ -336,7 +338,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
       subtitle: 'How Brothers App Studios collects, uses and shares information when you use our mobile apps and our website.',
       date: 'Oct 13, 2026',
       contactTitle: 'Questions, requests or complaints about privacy',
-      address: 'Brothers App Studios LLC · [mailing address], Wyoming, United States',
+      address: `Brothers App Studios LLC · ${DIRECTION}`,
       glance: [
         { icon: 'shield', title: 'We never sell your data', text: 'No third-party ads, and no tracking across other companies’ apps or websites.' },
         { icon: 'chip', title: 'No AI training, no face recognition', text: 'Your photos are used only to create the result you asked for.' },
@@ -455,7 +457,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`Questions, requests or complaints about privacy:`),
           UL([
             ['Email: ', EMAIL],
-            ['Mail: ', `Brothers App Studios LLC, [mailing address], Wyoming, United States`],
+            ['Mail: ', `Brothers App Studios LLC, ${DIRECTION}`],
             ['Website: ', `brothersappstudios.com`]
           ]),
           P(`This policy is written in English. A Spanish translation is provided for convenience; if they differ, the English version controls.`)
