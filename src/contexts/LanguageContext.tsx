@@ -125,6 +125,8 @@ const translations = {
     // Footer
     'footer.tagline': 'Construyamos tu próxima gran idea con ingeniería de clase mundial e inteligencia de vanguardia.',
     'footer.rights': 'Todos los derechos reservados.',
+    'footer.terms': 'Términos de Servicio',
+    'footer.privacy': 'Política de Privacidad',
 
     // Contact
     'contact.badge': 'CONTACTO',
@@ -259,6 +261,8 @@ const translations = {
     // Footer
     'footer.tagline': "Let's build your next big idea with world-class engineering and cutting-edge intelligence.",
     'footer.rights': 'All rights reserved.',
+    'footer.terms': 'Terms of Service',
+    'footer.privacy': 'Privacy Policy',
 
     // Contact
     'contact.badge': 'CONTACT',
@@ -282,8 +286,37 @@ const translations = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+const LANGUAGE_STORAGE_KEY = 'language';
+
+const isLanguage = (value: unknown): value is Language => value === 'es' || value === 'en';
+
+// A `?lang=en|es` query (used by links from the mobile apps) wins over the saved choice.
+const getInitialLanguage = (): Language => {
+  const fromQuery = new URLSearchParams(window.location.search).get('lang');
+  try {
+    if (isLanguage(fromQuery)) {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, fromQuery);
+      return fromQuery;
+    }
+    const stored = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (isLanguage(stored)) return stored;
+  } catch {
+    // Storage can be unavailable (private mode, blocked cookies); fall back below.
+  }
+  return isLanguage(fromQuery) ? fromQuery : 'es';
+};
+
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('es');
+  const [language, setLanguageState] = useState<Language>(getInitialLanguage);
+
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang);
+    try {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+    } catch {
+      // Ignore storage failures; the choice still applies to this page.
+    }
+  };
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations['es']] || key;
