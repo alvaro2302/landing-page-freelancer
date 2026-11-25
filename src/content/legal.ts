@@ -462,6 +462,14 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           ]),
           P(`This policy is written in English. A Spanish translation is provided for convenience; if they differ, the English version controls.`)
         ]),
+        S('10', 'Photos and Face Data', [
+          P(`When you choose a photo to use with a specific feature, the App uploads that photo to our servers. Photos may include people's faces. The app does not use Face ID, the TrueDepth camera or ARKit, and it does not create facial geometry, face templates or biometric identifiers, or identify the people in your photos.`, 'What we collect. '),
+          P(`Your photo is used only to provide the specific feature you requested (for example, restoring a photo, repairing damage or enhancing details, including faces). We never use your photos or any face data for advertising, marketing, profiling or to train AI models, and we never sell them.`, 'How we use it. '),
+          P(`To create your result, your photo is sent to one or more of our AI processing providers: Replicate, OpenAI and Google (Gemini API). They process it only to generate your result and do not use it to train their models. We do not share your photos with any other third party.`, 'Sharing. '),
+          P(`Your photo and its result are stored on our servers only during processing and are automatically and permanently deleted within 24 hours. Our providers may keep a temporary copy under their own policies: Replicate deletes it within 1 hour; OpenAI and Google may retain it for a limited time (up to 30 and 55 days respectively) solely for abuse and security monitoring, after which it is deleted.`, 'Storage and retention. '),
+          P(`Deletion is automatic. You can also request earlier deletion by contacting us at ${EMAIL}.`, 'Deletion. '),
+          P(`Before any photo is uploaded, the app explains this and asks for your permission. If you decline, no photo is uploaded.`, 'Consent. ')
+        ]),
         S('A', 'Appendix A: Apps covered by this policy', [
           P(`This policy applies to the apps below, published by Brothers App Studios LLC on the Apple App Store and Google Play. When we publish a new app, we add it here and update the date at the top.`),
           T(['App', 'Account', 'Data the app processes', 'Saved history on our servers'], [
@@ -598,6 +606,14 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
             ['Dirección postal: ', `Brothers App Studios LLC, [dirección postal], Wyoming, Estados Unidos`],
             ['Sitio web: ', `brothersappstudios.com`]
           ])
+        ]),
+        S('10', 'Fotos y datos faciales', [
+          P(`Cuando eliges una foto para usarla con una funcionalidad específica, la App sube esa foto a nuestros servidores. Las fotos pueden incluir rostros de personas. La app no usa Face ID, la cámara TrueDepth ni ARKit, y no crea geometría facial, plantillas faciales ni identificadores biométricos, ni identifica a las personas de tus fotos.`, 'Qué recopilamos. '),
+          P(`Tu foto se usa solo para ofrecer la funcionalidad específica que pediste (por ejemplo, restaurar una foto, reparar daños o mejorar detalles, incluidos los rostros). Nunca usamos tus fotos ni ningún dato facial para publicidad, marketing, elaboración de perfiles ni para entrenar modelos de IA, y nunca los vendemos.`, 'Cómo lo usamos. '),
+          P(`Para crear tu resultado, tu foto se envía a uno o más de nuestros proveedores de procesamiento de IA: Replicate, OpenAI y Google (Gemini API). Ellos la procesan solo para generar tu resultado y no la usan para entrenar sus modelos. No compartimos tus fotos con ningún otro tercero.`, 'Con quién lo compartimos. '),
+          P(`Tu foto y su resultado se guardan en nuestros servidores solo durante el procesamiento y se borran de forma automática y permanente dentro de 24 horas. Nuestros proveedores pueden conservar una copia temporal según sus propias políticas: Replicate la borra dentro de 1 hora; OpenAI y Google pueden conservarla por un tiempo limitado (hasta 30 y 55 días, respectivamente) únicamente para monitoreo de abuso y seguridad, y después la borran.`, 'Almacenamiento y conservación. '),
+          P(`El borrado es automático. También puedes pedir que se borre antes escribiéndonos a ${EMAIL}.`, 'Eliminación. '),
+          P(`Antes de subir cualquier foto, la app te explica esto y te pide permiso. Si no aceptas, no se sube ninguna foto.`, 'Consentimiento. ')
         ]),
         S('A', 'Apéndice A: Apps cubiertas por esta política', [
           P(`Esta política se aplica a las apps siguientes, publicadas por Brothers App Studios LLC en Apple App Store y Google Play. Cuando publicamos una app nueva, la agregamos aquí y actualizamos la fecha.`),
