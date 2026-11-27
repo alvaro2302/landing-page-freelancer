@@ -48,7 +48,7 @@ export const LEGAL_ROUTES: Record<LegalDocId, string> = {
 
 export const LEGAL_EMAIL = 'alejandro1401@brothersappstudios.com';
 const EMAIL = LEGAL_EMAIL;
-export const directionLLC = '30 N Gould St Ste R, SHERIDAN, WY, 8280, United States';
+export const directionLLC = '30 N Gould St Ste R, Sheridan, WY 82801, United States';
 const DIRECTION = directionLLC;
 
 const P = (t: string, l?: string): LegalBlock => ({ k: 'p', t, l });
@@ -78,7 +78,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
     en: {
       title1: 'Terms of ', title2: 'Service',
       subtitle: 'The agreement that governs every mobile app we publish and our website, brothersappstudios.com.',
-      date: 'Oct 13, 2026',
+      date: 'Nov 26, 2026',
       contactTitle: 'Questions about these Terms?',
       address: `Brothers App Studios LLC · ${DIRECTION}`,
       sections: [
@@ -184,7 +184,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`These Terms are governed by the laws of the State of Wyoming and applicable US federal law, without regard to conflict-of-law rules. Any dispute not subject to arbitration will be heard only in the state or federal courts located in Wyoming, and both parties consent to their jurisdiction, except where Section 9 lets you sue where you live.`, 'Governing law. '),
           P(`We may update these Terms, for example when we launch a new app or feature. We will change the "Last updated" date. If a change is material, we will notify you in the app or by email before it takes effect. Continuing to use the Services after that date means you accept the updated Terms. Changes to Section 9 will not apply to disputes we already knew about.`, 'Changes to these Terms. '),
           P(`These Terms and our Privacy Policy are the entire agreement between you and us about the Services. If any provision is unenforceable, the rest stays in effect. Our failure to enforce a provision is not a waiver. You may not transfer these Terms without our consent; we may transfer them as part of a merger, acquisition or sale of assets. These Terms are written in English. A Spanish translation is provided for convenience; if they differ, the English version controls.`, 'General. '),
-          P(`Brothers App Studios LLC, ${DIRECTION}· ${EMAIL} · brothersappstudios.com`, 'Contact. ')
+          P(`Brothers App Studios LLC, ${DIRECTION} · ${EMAIL} · brothersappstudios.com`, 'Contact. ')
         ]),
         S('11', 'Additional terms for apps downloaded from the Apple App Store', [
           P(`If you downloaded one of our apps from the Apple App Store, these terms also apply:`),
@@ -206,9 +206,9 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
     es: {
       title1: 'Términos de ', title2: 'Servicio',
       subtitle: 'El acuerdo que regula todas las apps móviles que publicamos y nuestro sitio web, brothersappstudios.com.',
-      date: '13 de octubre de 2026',
+      date: '26 de noviembre de 2026',
       contactTitle: '¿Preguntas sobre estos Términos?',
-      address: 'Brothers App Studios LLC · [dirección postal], Wyoming, Estados Unidos',
+      address: `Brothers App Studios LLC · ${DIRECTION}`,
       sections: [
         S('1', 'Acuerdo y alcance', [
           P(`Estos Términos de Servicio ("Términos") son un acuerdo legal entre tú y Brothers App Studios LLC, una sociedad de responsabilidad limitada de Wyoming ("Brothers App Studios", "nosotros"). Regulan el uso de todas las apps móviles que publicamos en Apple App Store y Google Play, y de nuestro sitio web brothersappstudios.com (en conjunto, los "Servicios").`),
@@ -312,7 +312,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`Estos Términos se rigen por las leyes del Estado de Wyoming y la ley federal de EE. UU. aplicable, sin considerar normas de conflicto de leyes. Toda disputa no sujeta a arbitraje se verá solo en los tribunales estatales o federales ubicados en Wyoming, y ambas partes aceptan su jurisdicción, salvo cuando la Sección 9 te permita demandar donde vives.`, 'Ley aplicable. '),
           P(`Podemos actualizar estos Términos, por ejemplo al lanzar una app o función nueva. Cambiaremos la fecha de "Última actualización". Si un cambio es importante, te avisaremos en la app o por correo antes de que entre en vigor. Seguir usando los Servicios después de esa fecha significa que aceptas los Términos actualizados. Los cambios a la Sección 9 no se aplicarán a disputas que ya conocíamos.`, 'Cambios a estos Términos. '),
           P(`Estos Términos y nuestra Política de Privacidad son el acuerdo completo entre tú y nosotros sobre los Servicios. Si alguna disposición es inaplicable, el resto sigue vigente. No hacer valer una disposición no implica renunciar a ella. No puedes transferir estos Términos sin nuestro consentimiento; nosotros podemos transferirlos como parte de una fusión, adquisición o venta de activos.`, 'Disposiciones generales. '),
-          P(`Brothers App Studios LLC, [dirección postal], Wyoming, Estados Unidos · ${EMAIL} · brothersappstudios.com`, 'Contacto. ')
+          P(`Brothers App Studios LLC, ${DIRECTION} · ${EMAIL} · brothersappstudios.com`, 'Contacto. ')
         ]),
         S('11', 'Términos adicionales para apps descargadas de Apple App Store', [
           P(`Si descargaste una de nuestras apps desde Apple App Store, también se aplican estos términos:`),
@@ -336,13 +336,13 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
     en: {
       title1: 'Privacy ', title2: 'Policy',
       subtitle: 'How Brothers App Studios collects, uses and shares information when you use our mobile apps and our website.',
-      date: 'Oct 13, 2026',
+      date: 'Nov 26, 2026',
       contactTitle: 'Questions, requests or complaints about privacy',
       address: `Brothers App Studios LLC · ${DIRECTION}`,
       glance: [
         { icon: 'shield', title: 'We never sell your data', text: 'No third-party ads, and no tracking across other companies’ apps or websites.' },
         { icon: 'chip', title: 'No AI training, no face recognition', text: 'Your photos are used only to create the result you asked for.' },
-        { icon: 'trash', title: 'Deleted within [24 hours]', text: 'Uploads and AI results are removed from our servers after processing.' }
+        { icon: 'trash', title: 'Deleted within 24 hours', text: 'Uploads and AI results are removed from our servers no later than 24 hours after upload.' }
       ],
       sections: [
         S('1', 'Who we are and what this policy covers', [
@@ -383,7 +383,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           OL([
             ['We ask first. ', `Before your photo or content is sent to an AI provider for the first time, the app tells you and asks for your permission.`],
             ['We send only what is needed. ', `The photo or prompt you selected is sent over an encrypted connection (HTTPS) from our servers to the AI provider, together with the settings you chose. We do not send your name or email with it.`],
-            ['The provider returns the result. ', `Our main AI provider is Replicate, Inc. (United States). For requests made through its API, Replicate automatically deletes inputs, outputs and logs about one hour after processing, by default.`],
+            ['The provider returns the result. ', `Our AI providers are Replicate, Inc., OpenAI, L.L.C. and Google LLC (Gemini API), all based in the United States. Replicate automatically deletes inputs, outputs and logs about one hour after processing, by default. OpenAI and Google may keep a copy for a limited time solely for abuse and security monitoring (see Section 6).`],
             ['We delete it from our servers. ', `We keep your original photo and the result on our servers only as long as Section 6 describes.`]
           ]),
           P(`We do not use your photos, prompts or results to train or improve AI models, and we do not sell them.`, 'No training. '),
@@ -407,11 +407,13 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`We do not sell your personal information, and we do not share it for cross-context behavioral advertising. We share it only in the cases below.`),
           P(`These companies process data on our behalf, under contracts that limit their use of it to providing their service to us:`, 'Service providers. '),
           T(['Provider', 'What they do for us', 'Data involved'], [
-            ['Replicate, Inc.', 'Runs the AI models', 'Photos, prompts and settings you submit; AI results'],
+            ['Replicate, Inc.', 'Runs AI models that restore and edit your photos', 'Photos and settings you submit; AI results'],
+            ['OpenAI, L.L.C.', 'Runs AI models that restore and edit your photos', 'Photos and settings you submit; AI results'],
+            ['Google LLC (Gemini API)', 'Runs AI models that restore and edit your photos', 'Photos and settings you submit; AI results'],
+            ['Supabase, Inc.', 'Stores uploaded photos and AI results temporarily in private storage', 'Uploaded photos and AI results, deleted within 24 hours of upload'],
+            ['Fly.io, Inc.', 'Hosts our backend servers', 'Uploaded photos while they are processed; anonymous app user ID; technical logs'],
             ['RevenueCat, Inc.', 'Manages subscriptions and purchases', 'Anonymous app user ID, purchase records, device type'],
-            ['Apple Inc. and Google LLC', 'Process payments and optional sign-in', "Handled under Apple's and Google's own privacy policies"],
-            ['[Hosting / backend provider, e.g. Supabase]', 'Hosts our servers and, in apps with accounts, our database', 'Account data, uploaded content while it is stored'],
-            ['[Crash reporting provider, e.g. Firebase Crashlytics or Sentry]', 'Crash and performance reports', 'Device and app information, crash logs']
+            ['Apple Inc. and Google LLC', 'Process payments and optional sign-in', "Handled under Apple's and Google's own privacy policies"]
           ]),
           P(`We may disclose information if required by law, subpoena or court order, or when we believe in good faith it is necessary to protect the rights, safety or property of our users, the public or Brothers App Studios. This includes reporting apparent child sexual abuse material to the National Center for Missing & Exploited Children (NCMEC).`, 'Legal reasons. '),
           P(`If Brothers App Studios is involved in a merger, acquisition or sale of assets, your information may be transferred as part of that deal. This policy will continue to apply to it.`, 'Business transfers. '),
@@ -420,13 +422,15 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
         S('6', 'How long we keep information', [
           P(`We keep information only as long as we need it for the purposes in Section 4, unless the law requires us to keep it longer.`),
           T(['Data', 'How long we keep it'], [
-            ['Photos and prompts you upload, and AI results, on our servers', 'Deleted within [24 hours] after processing, unless you save them in an app that offers a gallery or history (see Appendix A)'],
-            ['Same data at our AI provider (Replicate)', 'About 1 hour after processing, by default'],
+            ['Photos and prompts you upload, and AI results, on our servers (Supabase and Fly.io, United States)', 'Deleted no later than 24 hours after upload, unless you save them in an app that offers a gallery or history (see Appendix A)'],
+            ['Same data at Replicate', 'About 1 hour after processing, by default'],
+            ['Same data at OpenAI', 'Up to 30 days, solely for abuse and security monitoring, then deleted'],
+            ['Same data at Google (Gemini API)', 'Up to 55 days, solely for abuse monitoring and legal requirements, then deleted'],
             ["Content saved in your account's gallery or history", 'Until you delete it or delete your account'],
-            ['Account information', 'Until you delete your account, then removed within [30 days]'],
+            ['Account information', 'Until you delete your account, then removed within 30 days'],
             ['Purchase records', 'As long as needed for accounting, tax and legal obligations'],
-            ['Crash and diagnostic reports', 'Up to [90 days]'],
-            ['Support emails', 'Up to [2 years] after the conversation ends']
+            ['Crash and diagnostic reports', 'Up to 90 days'],
+            ['Support emails', 'Up to 2 years after the conversation ends']
           ]),
           P(`Photos and results saved only on your device stay there until you delete them. We cannot access or delete them for you.`)
         ]),
@@ -434,10 +438,10 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`In apps that offer an account, you can delete your account and its data at any time:`, 'Deleting your account and data. '),
           UL([
             `Inside the app: Settings > Account > Delete account.`,
-            `Without the app: send a request from [brothersappstudios.com/delete-account], or email us at ${EMAIL} with the app name and the email linked to your account.`
+            `Without the app: email us at ${EMAIL} with the app name and the email linked to your account.`
           ]),
-          P(`We complete deletion within [30 days]. Deleting an account does not cancel a subscription; cancel it in your Apple or Google account settings.`),
-          P(`We do not link your uploads to your identity. You can ask us to delete any data tied to your device's app user ID by emailing us; tell us the app name and, if possible, the app user ID shown in the app's settings.`, 'Apps without an account. '),
+          P(`We complete deletion within 30 days. Deleting an account does not cancel a subscription; cancel it in your Apple or Google account settings.`),
+          P(`We do not link your uploads to your identity. You can ask us to delete any data tied to your device's app user ID by emailing us; tell us the app name and, if possible, the approximate date you used it.`, 'Apps without an account. '),
           P(`You can deny or remove camera and photo library access in your device settings at any time, though some features will stop working. You can also stop all collection by uninstalling the app.`, 'Other choices. '),
           P(`Depending on where you live, you may have the right to access, correct, delete or receive a copy of your personal information, to object to or restrict certain processing, and to withdraw consent. This includes residents of California and other US states with consumer privacy laws, and of the European Economic Area, the United Kingdom and Switzerland.`, 'Privacy rights by location. '),
           UL([
@@ -463,18 +467,18 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`This policy is written in English. A Spanish translation is provided for convenience; if they differ, the English version controls.`)
         ]),
         S('10', 'Photos and Face Data', [
-          P(`When you choose a photo to use with a specific feature, the App uploads that photo to our servers. Photos may include people's faces. The app does not use Face ID, the TrueDepth camera or ARKit, and it does not create facial geometry, face templates or biometric identifiers, or identify the people in your photos.`, 'What we collect. '),
+          P(`When you choose a photo to use with a specific feature, the App uploads that photo to our servers. Photos may include people's faces. The app does not use Face ID, the TrueDepth camera or ARKit, and it does not create facial geometry, face templates or biometric identifiers, or identify the people in your photos. While restoring or enhancing a photo, the AI model may locate and improve facial areas within the image; nothing derived from faces is extracted, stored or used to identify anyone.`, 'What we collect. '),
           P(`Your photo is used only to provide the specific feature you requested (for example, restoring a photo, repairing damage or enhancing details, including faces). We never use your photos or any face data for advertising, marketing, profiling or to train AI models, and we never sell them.`, 'How we use it. '),
-          P(`To create your result, your photo is sent to one or more of our AI processing providers: Replicate, OpenAI and Google (Gemini API). They process it only to generate your result and do not use it to train their models. We do not share your photos with any other third party.`, 'Sharing. '),
-          P(`Your photo and its result are stored on our servers only during processing and are automatically and permanently deleted within 24 hours. Our providers may keep a temporary copy under their own policies: Replicate deletes it within 1 hour; OpenAI and Google may retain it for a limited time (up to 30 and 55 days respectively) solely for abuse and security monitoring, after which it is deleted.`, 'Storage and retention. '),
+          P(`To create your result, your photo is sent to one or more of our AI processing providers: Replicate, OpenAI and Google (Gemini API, paid tier). They process it only to generate your result and do not use it to train their models. We do not share your photos with any other third party.`, 'Sharing. '),
+          P(`Your photo and its result are stored temporarily in private storage operated by Supabase, Inc. and processed by our backend hosted on Fly.io, both in the United States. They are automatically and permanently deleted no later than 24 hours after upload. Our providers may keep a temporary copy under their own policies: Replicate deletes it about 1 hour after processing; OpenAI and Google may retain it for a limited time (up to 30 and 55 days respectively) solely for abuse and security monitoring, after which it is deleted.`, 'Storage and retention. '),
           P(`Deletion is automatic. You can also request earlier deletion by contacting us at ${EMAIL}.`, 'Deletion. '),
-          P(`Before any photo is uploaded, the app explains this and asks for your permission. If you decline, no photo is uploaded.`, 'Consent. ')
+          P(`Before any photo is uploaded, the app explains this and asks for your permission. If you decline, no photo is uploaded. You can withdraw your permission at any time in the app's settings.`, 'Consent. ')
         ]),
         S('A', 'Appendix A: Apps covered by this policy', [
           P(`This policy applies to the apps below, published by Brothers App Studios LLC on the Apple App Store and Google Play. When we publish a new app, we add it here and update the date at the top.`),
           T(['App', 'Account', 'Data the app processes', 'Saved history on our servers'], [
-            ['Photo Old', '[No]', 'Photos you upload; AI results; purchase records; crash reports', '[No: deleted within 24 hours]'],
-            ['StyleMe AI', '[No]', 'Face photos you upload; chosen hairstyle and hair color; AI results; purchase records; crash reports', '[No: deleted within 24 hours]']
+            ['PhotoRestore', 'No', 'Photos you upload (may include faces); AI results; anonymous app user ID; purchase records', 'No: deleted within 24 hours of upload'],
+            ['StyleMe AI', 'No', 'Face photos you upload; chosen hairstyle and hair color; AI results; purchase records', 'No: deleted within 24 hours of upload']
           ])
         ])
       ]
@@ -482,13 +486,13 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
     es: {
       title1: 'Política de ', title2: 'Privacidad',
       subtitle: 'Cómo Brothers App Studios recopila, usa y comparte información cuando usas nuestras apps móviles y nuestro sitio web.',
-      date: '13 de octubre de 2026',
+      date: '26 de noviembre de 2026',
       contactTitle: 'Preguntas, solicitudes o quejas sobre privacidad',
-      address: 'Brothers App Studios LLC · [dirección postal], Wyoming, Estados Unidos',
+      address: `Brothers App Studios LLC · ${DIRECTION}`,
       glance: [
         { icon: 'shield', title: 'Nunca vendemos tus datos', text: 'Sin anuncios de terceros ni rastreo en apps o sitios web de otras empresas.' },
         { icon: 'chip', title: 'Sin entrenamiento de IA ni reconocimiento facial', text: 'Tus fotos solo se usan para crear el resultado que pediste.' },
-        { icon: 'trash', title: 'Se borran dentro de [24 horas]', text: 'Lo que subes y los resultados de IA se eliminan de nuestros servidores tras el procesamiento.' }
+        { icon: 'trash', title: 'Se borran dentro de 24 horas', text: 'Lo que subes y los resultados de IA se eliminan de nuestros servidores como máximo 24 horas después de la subida.' }
       ],
       sections: [
         S('1', 'Quiénes somos y qué cubre esta política', [
@@ -529,7 +533,7 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           OL([
             ['Primero te preguntamos. ', `Antes de enviar tu foto o contenido a un proveedor de IA por primera vez, la app te lo informa y te pide permiso.`],
             ['Enviamos solo lo necesario. ', `La foto o el texto que elegiste se envía por una conexión cifrada (HTTPS) desde nuestros servidores al proveedor de IA, junto con los ajustes que elegiste. No enviamos tu nombre ni tu correo.`],
-            ['El proveedor devuelve el resultado. ', `Nuestro principal proveedor de IA es Replicate, Inc. (Estados Unidos). En las solicitudes hechas por su API, Replicate borra automáticamente las entradas, salidas y registros cerca de una hora después del procesamiento, por defecto.`],
+            ['El proveedor devuelve el resultado. ', `Nuestros proveedores de IA son Replicate, Inc., OpenAI, L.L.C. y Google LLC (Gemini API), todos con sede en Estados Unidos. Replicate borra automáticamente las entradas, salidas y registros cerca de una hora después del procesamiento, por defecto. OpenAI y Google pueden conservar una copia por un tiempo limitado únicamente para monitoreo de abuso y seguridad (ver Sección 6).`],
             ['Lo borramos de nuestros servidores. ', `Guardamos tu foto original y el resultado en nuestros servidores solo durante el tiempo que indica la Sección 6.`]
           ]),
           P(`No usamos tus fotos, textos ni resultados para entrenar o mejorar modelos de IA, y no los vendemos.`, 'Sin entrenamiento. '),
@@ -553,11 +557,13 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`No vendemos tu información personal ni la compartimos para publicidad conductual entre contextos. Solo la compartimos en estos casos.`),
           P(`Estas empresas tratan datos en nuestro nombre, bajo contratos que limitan su uso a prestarnos su servicio:`, 'Proveedores de servicios. '),
           T(['Proveedor', 'Qué hace para nosotros', 'Datos involucrados'], [
-            ['Replicate, Inc.', 'Ejecuta los modelos de IA', 'Fotos, textos y ajustes que envías; resultados de IA'],
+            ['Replicate, Inc.', 'Ejecuta modelos de IA que restauran y editan tus fotos', 'Fotos y ajustes que envías; resultados de IA'],
+            ['OpenAI, L.L.C.', 'Ejecuta modelos de IA que restauran y editan tus fotos', 'Fotos y ajustes que envías; resultados de IA'],
+            ['Google LLC (Gemini API)', 'Ejecuta modelos de IA que restauran y editan tus fotos', 'Fotos y ajustes que envías; resultados de IA'],
+            ['Supabase, Inc.', 'Guarda temporalmente las fotos subidas y los resultados de IA en un almacenamiento privado', 'Fotos subidas y resultados de IA, que se borran dentro de las 24 horas posteriores a la subida'],
+            ['Fly.io, Inc.', 'Aloja nuestros servidores de backend', 'Fotos subidas mientras se procesan; ID de usuario anónimo de la app; registros técnicos'],
             ['RevenueCat, Inc.', 'Gestiona suscripciones y compras', 'ID de usuario anónimo de la app, registros de compra, tipo de dispositivo'],
-            ['Apple Inc. y Google LLC', 'Procesan pagos e inicio de sesión opcional', 'Tratados según las políticas de privacidad propias de Apple y Google'],
-            ['[Proveedor de hosting / backend, p. ej. Supabase]', 'Aloja nuestros servidores y, en apps con cuenta, nuestra base de datos', 'Datos de cuenta, contenido subido mientras se almacena'],
-            ['[Proveedor de reportes de fallos, p. ej. Firebase Crashlytics o Sentry]', 'Reportes de fallos y rendimiento', 'Información del dispositivo y la app, registros de fallos']
+            ['Apple Inc. y Google LLC', 'Procesan pagos e inicio de sesión opcional', 'Tratados según las políticas de privacidad propias de Apple y Google']
           ]),
           P(`Podemos revelar información si lo exige la ley, una citación u orden judicial, o cuando creamos de buena fe que es necesario para proteger los derechos, la seguridad o los bienes de nuestros usuarios, del público o de Brothers App Studios. Esto incluye reportar material aparente de abuso sexual infantil al National Center for Missing & Exploited Children (NCMEC).`, 'Motivos legales. '),
           P(`Si Brothers App Studios participa en una fusión, adquisición o venta de activos, tu información puede transferirse como parte de esa operación. Esta política seguirá aplicándose a ella.`, 'Transferencias de negocio. '),
@@ -566,13 +572,15 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
         S('6', 'Cuánto tiempo conservamos la información', [
           P(`Conservamos la información solo mientras la necesitemos para los fines de la Sección 4, salvo que la ley exija conservarla más tiempo.`),
           T(['Dato', 'Cuánto tiempo lo conservamos'], [
-            ['Fotos y textos que subes, y resultados de IA, en nuestros servidores', 'Se borran dentro de [24 horas] tras el procesamiento, salvo que los guardes en una app que ofrezca galería o historial (ver Apéndice A)'],
-            ['Los mismos datos en nuestro proveedor de IA (Replicate)', 'Cerca de 1 hora tras el procesamiento, por defecto'],
+            ['Fotos y textos que subes, y resultados de IA, en nuestros servidores (Supabase y Fly.io, Estados Unidos)', 'Se borran como máximo 24 horas después de la subida, salvo que los guardes en una app que ofrezca galería o historial (ver Apéndice A)'],
+            ['Los mismos datos en Replicate', 'Cerca de 1 hora tras el procesamiento, por defecto'],
+            ['Los mismos datos en OpenAI', 'Hasta 30 días, únicamente para monitoreo de abuso y seguridad; después se borran'],
+            ['Los mismos datos en Google (Gemini API)', 'Hasta 55 días, únicamente para monitoreo de abuso y requisitos legales; después se borran'],
             ['Contenido guardado en la galería o historial de tu cuenta', 'Hasta que lo borres o elimines tu cuenta'],
-            ['Información de cuenta', 'Hasta que elimines tu cuenta; luego se borra dentro de [30 días]'],
+            ['Información de cuenta', 'Hasta que elimines tu cuenta; luego se borra dentro de 30 días'],
             ['Registros de compra', 'El tiempo necesario por obligaciones contables, fiscales y legales'],
-            ['Reportes de fallos y diagnóstico', 'Hasta [90 días]'],
-            ['Correos de soporte', 'Hasta [2 años] después de terminar la conversación']
+            ['Reportes de fallos y diagnóstico', 'Hasta 90 días'],
+            ['Correos de soporte', 'Hasta 2 años después de terminar la conversación']
           ]),
           P(`Las fotos y resultados guardados solo en tu dispositivo permanecen ahí hasta que los borres. No podemos acceder a ellos ni borrarlos por ti.`)
         ]),
@@ -580,10 +588,10 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`En las apps que ofrecen cuenta, puedes eliminar tu cuenta y sus datos en cualquier momento:`, 'Eliminar tu cuenta y tus datos. '),
           UL([
             `Dentro de la app: Ajustes > Cuenta > Eliminar cuenta.`,
-            `Sin la app: envía una solicitud desde [brothersappstudios.com/delete-account] o escríbenos a ${EMAIL} con el nombre de la app y el correo vinculado a tu cuenta.`
+            `Sin la app: escríbenos a ${EMAIL} con el nombre de la app y el correo vinculado a tu cuenta.`
           ]),
-          P(`Completamos la eliminación dentro de [30 días]. Eliminar la cuenta no cancela una suscripción; cancélala en los ajustes de tu cuenta de Apple o Google.`),
-          P(`No vinculamos lo que subes con tu identidad. Puedes pedirnos que borremos cualquier dato asociado al ID de usuario de la app en tu dispositivo escribiéndonos; indica el nombre de la app y, si es posible, el ID que aparece en los ajustes de la app.`, 'Apps sin cuenta. '),
+          P(`Completamos la eliminación dentro de 30 días. Eliminar la cuenta no cancela una suscripción; cancélala en los ajustes de tu cuenta de Apple o Google.`),
+          P(`No vinculamos lo que subes con tu identidad. Puedes pedirnos que borremos cualquier dato asociado al ID de usuario de la app en tu dispositivo escribiéndonos; indica el nombre de la app y, si es posible, la fecha aproximada en que la usaste.`, 'Apps sin cuenta. '),
           P(`Puedes negar o retirar el acceso a la cámara y a la galería de fotos en los ajustes de tu dispositivo en cualquier momento, aunque algunas funciones dejarán de funcionar. También puedes detener toda recopilación desinstalando la app.`, 'Otras opciones. '),
           P(`Según tu lugar de residencia, puedes tener derecho a acceder, corregir, borrar o recibir una copia de tu información personal, a oponerte o limitar ciertos tratamientos y a retirar tu consentimiento. Esto incluye a residentes de California y otros estados de EE. UU. con leyes de privacidad del consumidor, y del Espacio Económico Europeo, el Reino Unido y Suiza.`, 'Derechos de privacidad según dónde vivas. '),
           UL([
@@ -603,23 +611,23 @@ export const LEGAL_DOCS: Record<LegalDocId, Record<LegalLang, LegalDocument>> = 
           P(`Preguntas, solicitudes o quejas sobre privacidad:`),
           UL([
             ['Correo: ', EMAIL],
-            ['Dirección postal: ', `Brothers App Studios LLC, [dirección postal], Wyoming, Estados Unidos`],
+            ['Dirección postal: ', `Brothers App Studios LLC, ${DIRECTION}`],
             ['Sitio web: ', `brothersappstudios.com`]
           ])
         ]),
         S('10', 'Fotos y datos faciales', [
-          P(`Cuando eliges una foto para usarla con una funcionalidad específica, la App sube esa foto a nuestros servidores. Las fotos pueden incluir rostros de personas. La app no usa Face ID, la cámara TrueDepth ni ARKit, y no crea geometría facial, plantillas faciales ni identificadores biométricos, ni identifica a las personas de tus fotos.`, 'Qué recopilamos. '),
+          P(`Cuando eliges una foto para usarla con una funcionalidad específica, la App sube esa foto a nuestros servidores. Las fotos pueden incluir rostros de personas. La app no usa Face ID, la cámara TrueDepth ni ARKit, y no crea geometría facial, plantillas faciales ni identificadores biométricos, ni identifica a las personas de tus fotos. Al restaurar o mejorar una foto, el modelo de IA puede localizar y mejorar las zonas del rostro dentro de la imagen; no se extrae, guarda ni usa nada derivado de los rostros para identificar a nadie.`, 'Qué recopilamos. '),
           P(`Tu foto se usa solo para ofrecer la funcionalidad específica que pediste (por ejemplo, restaurar una foto, reparar daños o mejorar detalles, incluidos los rostros). Nunca usamos tus fotos ni ningún dato facial para publicidad, marketing, elaboración de perfiles ni para entrenar modelos de IA, y nunca los vendemos.`, 'Cómo lo usamos. '),
-          P(`Para crear tu resultado, tu foto se envía a uno o más de nuestros proveedores de procesamiento de IA: Replicate, OpenAI y Google (Gemini API). Ellos la procesan solo para generar tu resultado y no la usan para entrenar sus modelos. No compartimos tus fotos con ningún otro tercero.`, 'Con quién lo compartimos. '),
-          P(`Tu foto y su resultado se guardan en nuestros servidores solo durante el procesamiento y se borran de forma automática y permanente dentro de 24 horas. Nuestros proveedores pueden conservar una copia temporal según sus propias políticas: Replicate la borra dentro de 1 hora; OpenAI y Google pueden conservarla por un tiempo limitado (hasta 30 y 55 días, respectivamente) únicamente para monitoreo de abuso y seguridad, y después la borran.`, 'Almacenamiento y conservación. '),
+          P(`Para crear tu resultado, tu foto se envía a uno o más de nuestros proveedores de procesamiento de IA: Replicate, OpenAI y Google (Gemini API, nivel de pago). Ellos la procesan solo para generar tu resultado y no la usan para entrenar sus modelos. No compartimos tus fotos con ningún otro tercero.`, 'Con quién lo compartimos. '),
+          P(`Tu foto y su resultado se guardan temporalmente en un almacenamiento privado operado por Supabase, Inc. y se procesan en nuestro backend alojado en Fly.io, ambos en Estados Unidos. Se borran de forma automática y permanente como máximo 24 horas después de la subida. Nuestros proveedores pueden conservar una copia temporal según sus propias políticas: Replicate la borra cerca de 1 hora después del procesamiento; OpenAI y Google pueden conservarla por un tiempo limitado (hasta 30 y 55 días, respectivamente) únicamente para monitoreo de abuso y seguridad, y después la borran.`, 'Almacenamiento y conservación. '),
           P(`El borrado es automático. También puedes pedir que se borre antes escribiéndonos a ${EMAIL}.`, 'Eliminación. '),
-          P(`Antes de subir cualquier foto, la app te explica esto y te pide permiso. Si no aceptas, no se sube ninguna foto.`, 'Consentimiento. ')
+          P(`Antes de subir cualquier foto, la app te explica esto y te pide permiso. Si no aceptas, no se sube ninguna foto. Puedes retirar tu permiso en cualquier momento desde los ajustes de la app.`, 'Consentimiento. ')
         ]),
         S('A', 'Apéndice A: Apps cubiertas por esta política', [
           P(`Esta política se aplica a las apps siguientes, publicadas por Brothers App Studios LLC en Apple App Store y Google Play. Cuando publicamos una app nueva, la agregamos aquí y actualizamos la fecha.`),
           T(['App', 'Cuenta', 'Datos que procesa la app', 'Historial guardado en nuestros servidores'], [
-            ['Photo Old', '[No]', 'Fotos que subes; resultados de IA; registros de compra; reportes de fallos', '[No: se borran dentro de 24 horas]'],
-            ['StyleMe AI', '[No]', 'Fotos de rostro que subes; peinado y color elegidos; resultados de IA; registros de compra; reportes de fallos', '[No: se borran dentro de 24 horas]']
+            ['PhotoRestore', 'No', 'Fotos que subes (pueden incluir rostros); resultados de IA; ID de usuario anónimo de la app; registros de compra', 'No: se borran dentro de las 24 horas posteriores a la subida'],
+            ['StyleMe AI', 'No', 'Fotos de rostro que subes; peinado y color elegidos; resultados de IA; registros de compra', 'No: se borran dentro de las 24 horas posteriores a la subida']
           ])
         ])
       ]
